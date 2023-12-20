@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --side-title-color: hsl(35, 77%, 62%);
+  --btn-background: hsl(5, 85%, 63%);
+  --paragraph: 15px;
+  --lightWeight: 400;
+  --mediumWeight: 700;
+  --heavyWeight: 800;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.app {
+  width: 375px;
+  margin: 0 auto;
+}
+
+.header__links {
+    display: none;
+    background: red;
+}
+
+
+@media only screen and (min-width: 375px) {
+  .app {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .header_container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
