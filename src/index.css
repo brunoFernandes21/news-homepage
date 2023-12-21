@@ -24,7 +24,7 @@ body {
 .app {
   width: 480;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .header_container {
@@ -33,7 +33,16 @@ body {
   align-items: center;
   padding-top: 20px;
 }
-
+.backdrop {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: all .5s ease-in-out;
+}
 nav .header__links__desktop {
   position: fixed;
   display: block;
@@ -82,6 +91,14 @@ nav .close__nav {
 
 .header__links__desktop > li:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+/* Hero section  */
+.btn {
+  background: var(--btn-background);
+  color: #fff;
+  font-weight: var(--heavyWeight);
+  padding: 10px 40px;
 }
 
 /* Desktop styles */
