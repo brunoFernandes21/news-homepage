@@ -41,7 +41,7 @@ body {
   left: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 nav .header__links__desktop {
   position: fixed;
@@ -56,29 +56,12 @@ nav .header__links__desktop {
   top: 0;
   bottom: 0;
   z-index: 100;
-  transition: all .5s ease-in-out;
-}
-
-.show__nav .mobile__icon {
-  display: none;
-}
-
-.show__nav .header__links__desktop{
-  right: 0;
-}
-
-.show__nav .close__nav {
-  display: block;
-  z-index: 999;
-  color: #fff;
-}
-nav .close__nav {
-  display: none;
+  transition: all 0.5s ease-in-out;
 }
 
 .header__links__desktop > li {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid black;
   padding: 20px;
@@ -90,7 +73,23 @@ nav .close__nav {
 }
 
 .header__links__desktop > li:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.show__nav .mobile__icon {
+  display: none;
+}
+
+.show__nav .header__links__desktop {
+  right: 0;
+}
+
+.show__nav .close__nav {
+  display: block;
+  z-index: 999;
+  color: #fff;
+}
+nav .close__nav {
+  display: none;
 }
 
 /* Hero section  */
@@ -113,16 +112,37 @@ nav .close__nav {
     margin: 0 auto;
   }
   .header_container {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
   }
-  .header__links-desktop {
+
+  nav .header__links__desktop {
+    position: absolute;
     display: flex;
+    gap: 30px;
     justify-content: center;
-    align-items: center;
-    gap: 40px;
-    right: 0;
+    width: 450px;
+    height: 60px;
+    right: 0px;
+    background: #fff;
+    line-height: 0;
+    padding-top: 50px;
+    z-index: 0;
+  }
+  .header__links__desktop > li {
+    display: flex;
+    color: #000;
+    font-weight: var(--mediumWeight);
+    border-top: none;
+    border-bottom: none;
+
+    padding: 0;
+  }
+  .header__links__desktop li a:hover {
+    padding-left: 0;
+  }
+
+  .header__links__desktop > li:last-child {
+    border-bottom: none;
   }
   .mobile__icon {
     display: none;
