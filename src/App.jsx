@@ -14,8 +14,8 @@ const App = () => {
       <div className="main__content">
         <HeroSection />
         <NewSection />
-        <PopularSection />
       </div>
+        <PopularSection />
     </div>
   );
 };

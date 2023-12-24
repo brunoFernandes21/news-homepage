@@ -1,7 +1,7 @@
 const PopularSection = () => {
   return (
-    <main className="mt-16 mb-20 flex flex-col gap-10">
-      <section className="flex gap-6">
+    <main className="popular__section flex flex-col gap-10">
+      <section className="popular__1 flex gap-6">
         <img src="/src/assets/image-retro-pcs.jpg" width={120} height={120} alt="Image of an old PC" />
         <div>
           <h1 className="text-5xl text-gray-300 font-bold">01</h1>
@@ -9,7 +9,7 @@ const PopularSection = () => {
           <p className="mt-2 leading-6">What happens when old PCs are given modern upgrades?</p>
         </div>
       </section>
-      <section className="flex gap-6">
+      <section className="popular__2 flex gap-6">
         <img
           src="/src/assets/image-top-laptops.jpg" width={120} height={120}
           alt="Image of lots of modern laptops"
@@ -20,7 +20,7 @@ const PopularSection = () => {
           <p className="mt-2 leading-6">Our best picks for various needs and budgets.</p>
         </div>
       </section>
-      <section className="flex gap-6">
+      <section className="popular__3 flex gap-6">
         <img
           src="/src/assets/image-gaming-growth.jpg" width={120} height={120}
           alt="Image of a gaming controller over a hand"
