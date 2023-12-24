@@ -1,7 +1,7 @@
 
 const NewSection = () => {
   return (
-    <main className="mt-16 bg-black px-4 py-6 text-white">
+    <main className="bg-black px-4 py-6 text-white">
         <h1 className="New__section__title text-5xl font-bold">New</h1>
         <section className="mt-8 mb-8">
             <h2 className="font-bold text-xl">Hydrogen VS Electric Cars</h2>
