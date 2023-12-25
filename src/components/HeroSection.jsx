@@ -4,12 +4,12 @@ const HeroSection = () => {
       <section className="hero__section__images">
         <img
           className="hero__section__mobile__image"
-          src="/src/assets/image-web-3-mobile.jpg"
+          src="/image-web-3-mobile.jpg"
           alt="Image of objects"
         />
         <img
           className="hero__section__desktop__image"
-          src="/src/assets/image-web-3-desktop.jpg"
+          src="/image-web-3-desktop.jpg"
           alt="Image of objects"
         />
       </section>

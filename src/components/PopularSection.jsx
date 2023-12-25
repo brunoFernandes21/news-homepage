@@ -2,7 +2,7 @@ const PopularSection = () => {
   return (
     <main className="popular__section flex flex-col gap-10">
       <section className="popular__1 flex gap-6">
-        <img src="/src/assets/image-retro-pcs.jpg" width={120} height={120} alt="Image of an old PC" />
+        <img src="/image-retro-pcs.jpg" width={120} height={120} alt="Image of an old PC" />
         <div>
           <h1 className="text-5xl text-gray-300 font-bold">01</h1>
           <h2 className="text-lg font-black mt-2">Reviving Retro PCs</h2>
@@ -11,7 +11,7 @@ const PopularSection = () => {
       </section>
       <section className="popular__2 flex gap-6">
         <img
-          src="/src/assets/image-top-laptops.jpg" width={120} height={120}
+          src="/image-top-laptops.jpg" width={120} height={120}
           alt="Image of lots of modern laptops"
         />
         <div>
@@ -22,7 +22,7 @@ const PopularSection = () => {
       </section>
       <section className="popular__3 flex gap-6">
         <img
-          src="/src/assets/image-gaming-growth.jpg" width={120} height={120}
+          src="/image-gaming-growth.jpg" width={120} height={120}
           alt="Image of a gaming controller over a hand"
         />
         <div>
