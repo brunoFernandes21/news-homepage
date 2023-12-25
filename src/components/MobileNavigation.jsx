@@ -2,7 +2,7 @@ import { AiOutlineClose } from "react-icons/ai";
 
 const MobileNavigation = ({ setShowNav }) => {
   return (
-    <ul className="header__links__desktop">
+    <ul className="header__links__mobile">
       <AiOutlineClose
         onClick={() => setShowNav(false)}
         className="close__nav cursor-pointer text-4xl"

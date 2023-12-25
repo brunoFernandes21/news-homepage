@@ -42,7 +42,8 @@ body {
   z-index: 1;
   transition: all 0.5s ease-in-out;
 }
-nav .header__links__desktop {
+/* NAVIGATION */
+nav .header__links__mobile {
   position: fixed;
   display: block;
   width: 70%;
@@ -58,7 +59,7 @@ nav .header__links__desktop {
   transition: all 0.5s ease-in-out;
 }
 
-.header__links__desktop > li {
+.header__links__mobile > li {
   display: flex;
   justify-content: flex-start;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -67,21 +68,18 @@ nav .header__links__desktop {
   box-sizing: border-box;
   font-weight: var(--mediumWeight);
 }
-.header__links__desktop li a:hover {
+.header__links__mobile li a:hover {
   padding-left: 50px;
 }
-
-.header__links__desktop > li:last-child {
+.header__links__mobile > li:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .show__nav > .mobile__icon {
   display: none;
 }
-
-.show__nav > .header__links__desktop {
+.show__nav > .header__links__mobile {
   right: 0;
 }
-
 .show__nav > .close__nav {
   display: block;
   z-index: 999;
@@ -91,6 +89,11 @@ nav .close__nav {
   position: absolute;
   top: 20px;
   right: 15px;
+}
+
+/* DESKTOP NAVIGATION */
+.desktop__navigation__links  {
+  display: none;
 }
 
 /* Hero section  */
@@ -161,6 +164,14 @@ nav .close__nav {
     padding: 30px 0 0 0;
     height: 100vh;
   }
+  /* navigation  */
+  .desktop__navigation__links  {
+    display: flex;
+  }
+  .desktop__nav__links:hover {
+    color: var(--btn-background);
+  }
+
   .mobile__icon {
     display: none;
   }
@@ -219,6 +230,11 @@ nav .close__nav {
 
   .new__section__cars > h2, .new__section__ai > h2, .new__section__vc > h2 {
     font-size: 25px;
+    cursor: pointer;
+  }
+
+  .new__section h2:hover {
+    color: var(--side-title-color);
   }
 
   .new__section__cars > p, .new__section__ai > p, .new__section__vc > p {
@@ -239,6 +255,11 @@ nav .close__nav {
  .popular__section h2 {
     font-size: 20px;
     font-weight: var(--heavyWeight);
+    cursor: pointer;
+  }
+
+  .popular__section h2:hover {
+    color: var(--btn-background);
   }
  
 }

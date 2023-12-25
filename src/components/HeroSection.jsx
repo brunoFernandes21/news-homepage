@@ -21,7 +21,7 @@ const HeroSection = () => {
             power of the the platforms back into the hands of the people. But is
             it really fulfilling its promise?
           </p>
-          <button className="btn">READ MORE</button>
+          <button className="btn hover:bg-black transition ease-in-out">READ MORE</button>
         </div>
       </section>
     </main>
