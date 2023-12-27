@@ -5,7 +5,7 @@ const MobileNavigation = ({ setShowNav }) => {
     <ul className="header__links__mobile">
       <AiOutlineClose
         onClick={() => setShowNav(false)}
-        className="close__nav cursor-pointer text-4xl"
+        className="close__nav cursor-pointer text-4xl hover:text-slate-900"
       />
       <li>Home</li>
       <li>New</li>
